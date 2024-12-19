@@ -2,7 +2,7 @@
 import requests
 import random
 
-def main():
+def menu():
     nombre = input("Introduce tu nombre: ")
     print(f"¡Bienvenido, {nombre}! Vamos a comenzar el juego.\n")
     response = requests.get("https://opentdb.com/api.php?amount=15&category=23&difficulty=easy&type=multiple")
@@ -33,5 +33,4 @@ def main():
 
     print(f"Juego terminado. Tu puntuación final es: {puntos} puntos.")
 
-if __name__ == "__main__":
-    main()
+menu()
